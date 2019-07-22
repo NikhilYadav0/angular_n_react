@@ -1,0 +1,17 @@
+.TextStyle {
+  margin: 5;
+}
+.title {
+  font-weight: 600;
+  font-size: 16;
+}
+.image {
+  width: 50%;
+  margin-left: 5;
+  margin-bottom: 5;
+  max-width: 500px;
+  max-width: 350;
+  border-radius: 1;
+  border-width: 0.5;
+  border-color: "#d6d7da";
+}

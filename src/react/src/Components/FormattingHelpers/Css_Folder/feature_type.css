@@ -1,0 +1,8 @@
+.image {
+  align-self: "stretch";
+  height: 200;
+  max-width: 350;
+  border-radius: 1;
+  border-width: 0.5;
+  border-color: "#d6d7da";
+}

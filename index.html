@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!-- Latest compiled and minified CSS -->
+    <title>Angular 1.x with React</title>
+  </head>
+
+  <body>
+    <!--<script src="/node_modules/angular/angular.js"></script>-->
+    <!-- <style>
+      .done-true{
+        text-decoration: line-through;
+      }
+      .done-false{
+        text-decoration: "";
+      }
+      .angular-part{
+        background-color: lightskyblue
+      }
+      .react-part{
+        background-color: cornflowerblue
+      }
+      .list-item{
+        cursor: pointer
+      }
+
+    </style> -->
+
+
+    
+    <div ng-app="app">
+      <div ng-controller="TodoCtrl">
+        <!-- <div class="angular-part">
+          <h1>Angular TO-DO</h1>
+          <span>{{ remaining() }} of {{ todos.length }} remaining</span>
+          <ul class="unstyled">
+            <li ng-repeat="todo in todos">
+              <span class="done-{{ todo.done }}">{{ todo.text }}</span>
+            </li>
+          </ul>
+          <form ng-submit="addTodo()">
+            <input
+              type="text"
+              ng-model="todoText"
+              size="30"
+              placeholder="add new todo here"
+            />
+            <input class="btn-primary" type="submit" value="add" />
+          </form>
+          <div>&nbsp;</div>
+        </div>
+        <div> -->
+          <!--ng-if={{todos}}-->
+          <div >
+            <div class="row" >
+              <div class="col-sm-6 col-xs-8 doubthomeWelcomeText"
+                  style="z-index:1000;">
+                <h2>Hello <strong>Nikhil Yadav,</strong></h2>
+                <h4 class="fontregular mobilefont14">Continue Your Learning</h4>
+              </div>
+              <div class="col-sm-6 col-xs-4 doubtforumastronaut" 
+                style="z-index:1000;position: relative;right:100px;top:100px;">
+                  <img width=150 height=150 
+                  src="https://d1l59jsi25mzk9.cloudfront.net/apps3/build/images/DoubtForum/doubtforumastronaut.png"
+                  class="img-responsive float-right"></div>
+                </div>
+          </div>
+          <!-- <nav class="navbar navbar-inverse" style="z-index:1000;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div> -->
+          </nav>
+          <react-directive
+            todos="todos"
+            mark-complete="markItemCompleted(text)"
+          ></react-directive>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="dist/bundle.min.js"></script>
+  </body>
+</html>
